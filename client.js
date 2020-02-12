@@ -1,6 +1,6 @@
 const net = require('net');
 
-
+const connect = function() {
   const conn = net.createConnection({ 
     host: '192.168.88.177',
     port: 50541
@@ -14,6 +14,7 @@ const net = require('net');
   conn.on('connect', (data) => {
     console.log('Successfully connected to game server" ');
     conn.write("Name: ML");
+
     // setInterval(() => {
     //   conn.write('Move: up')
     // }, 200);
@@ -31,5 +32,6 @@ const net = require('net');
  
   return conn;
 
-
+    }
+    
 module.exports = { connect };
