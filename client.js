@@ -13,6 +13,7 @@ const connect = function() {
 
   conn.on('connect', () => {
     console.log('=) =) =)');
+    conn.write("Name: ML");
   });
 
   
