@@ -12,7 +12,7 @@ const connect = function() {
   });
 
   conn.on('connect', () => {
-    console.log('=) =) =)');
+    console.log('Successfully connected to game server" ');
     conn.write("Name: ML");
   });
 
