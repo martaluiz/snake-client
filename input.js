@@ -20,7 +20,8 @@ const handleUserInput = function(key) {
     connection.write("Move: left");
   } else if (key === "d") {
     connection.write("Move: right");
-  
+  } else if (key === "m") {
+    connection.write("Say: Let's play!!!");
   }
 }
 module.exports = {setupInput};
